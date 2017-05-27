@@ -13,5 +13,5 @@ import javax.persistence.Table;
 @Data
 @Entity
 @Table(name = "infosources")
-public class InfoSource {
+public class InfoSource extends  Model {
 }

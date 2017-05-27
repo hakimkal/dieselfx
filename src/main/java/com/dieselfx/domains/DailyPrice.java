@@ -12,5 +12,5 @@ import javax.persistence.Table;
 @Entity
 @Data
 @Table(name = "dailyprices")
-public class DailyPrice {
+public class DailyPrice extends Model {
 }

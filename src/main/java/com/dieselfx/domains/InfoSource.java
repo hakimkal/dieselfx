@@ -14,4 +14,14 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "infosources")
 public class InfoSource extends  Model {
+
+
+    private String name;
+    private String phone;
+    private String location;
+    private String email;
+
+
+
+
 }

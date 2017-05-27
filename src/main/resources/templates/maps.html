@@ -11,9 +11,9 @@
   <div class="map"></div>
     Diesel FX
 
-  <script th:src="@{js/maps/app.js}"></script>
+  <script th:src="@{/js/maps/app.js}"></script>
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGy57v-ftVJfU03inWJ3hqmJ5WRPDyka8&callback=initMap">
+  th:src="@{https://maps.googleapis.com/maps/api/js?key=AIzaSyDGy57v-ftVJfU03inWJ3hqmJ5WRPDyka8&callback=initMap}">
   </script>
 </body>
 </html>

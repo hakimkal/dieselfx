@@ -103,13 +103,13 @@ function initMap() {
   });
 
   // Load the stores GeoJSON onto the map.
-  map.data.loadGeoJson('js/maps/stores.json');
+  map.data.loadGeoJson('../js/maps/stores.json');
 
   // Define the custom marker icons, using the store's "category".
   map.data.setStyle(feature => {
     return {
       icon: {
-        url: `img/icon_${feature.getProperty('category')}.png`,
+        url: `../img/icon_${feature.getProperty('category')}.png`,
         scaledSize: new google.maps.Size(64, 64)
       }
     };
@@ -121,20 +121,18 @@ function initMap() {
   // Show the information for a store when its marker is clicked.
   map.data.addListener('click', event => {
 
-    let category = event.feature.getProperty('category');
-    let name = event.feature.getProperty('name');
-    let description = event.feature.getProperty('description');
-    let hours = event.feature.getProperty('hours');
-    let phone = event.feature.getProperty('phone');
-    let position = event.feature.getGeometry().get();
-    let content = `
-      <img style="float:left; width:200px; margin-top:30px" src="img/logo_${category}.png">
+    var category = event.feature.getProperty('category');
+    var name = event.feature.getProperty('name');
+    var description = event.feature.getProperty('description');
+    var hours = event.feature.getProperty('hours');
+    var phone = event.feature.getProperty('phone');
+    var position = event.feature.getGeometry().get();
+    var content = `<img style="float:left; width:200px; margin-top:30px" src="../img/logo_${category}.png">
       <div style="margin-left:220px; margin-bottom:20px;">
         <h2>${name}</h2><p>${description}</p>
         <p><b>Price:</b> ${hours}<br/><b>Phone:</b> ${phone}</p>
         <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
-      </div>
-    `;
+      </div>`;
 
     infoWindow.setContent(content);
     infoWindow.setPosition(position);

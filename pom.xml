@@ -55,6 +55,8 @@ git
 			<artifactId>commons-collections</artifactId>
 			<version>3.2.1</version>
 		</dependency>
+
+		<!-- Nothing here -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>

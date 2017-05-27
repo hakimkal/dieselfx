@@ -19,8 +19,15 @@ public class HomeController   {
 
     public String index(Principal principal, Model model){
 
-        return "index" ;
+        return "home" ;
     }
 
+
+    @RequestMapping(method = RequestMethod.GET, value = "map")
+
+    public String showMap(Principal principal, Model model){
+
+        return "maps" ;
+    }
 
 }

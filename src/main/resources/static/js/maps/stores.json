@@ -1,0 +1,215 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4148877,5.3154909        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "patisserie",
+        "hours": "155",
+        "description": "P&P Oil",
+        "name": "ABIA DEPOT",
+        "phone": "+44 20 1234 5678"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5540785,6.7330056        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "patisserie",
+        "hours": "176",
+        "description": "IMO DEPOT PRICE:97,",
+        "name": "IMO Oil & Gas",
+        "phone": "+44 117 121 2121"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.273459,
+          52.638072
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "patisserie",
+        "hours": "10am - 6pm",
+        "description": "IMO DEPOT PRICE:97.",
+        "name": "Amadi and sons Diesel Depot",
+        "phone": "+44 1603 123456"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.882509,
+          50.848831
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "patisserie",
+        "hours": "10am - 6pm",
+        "description": "Josie Diesel Depot.",
+        "name": "Disel Depot",
+        "phone": "+44 1202 343434"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.985933,
+          53.408899
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "patisserie",
+        "hours": "200",
+        "description": "Makurdi Depot.",
+        "name": "Smith Oil",
+        "phone": "+44 151 444 4444"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2358114,6.4239934
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "patisserie",
+        "hours": "140",
+        "description": "OX Oil Depot.",
+        "name": "OX Export",
+        "phone": "+44 5555 55555"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         5.0038867,7.3399388
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "patisserie",
+        "hours": "175",
+        "description": "D Petrolium",
+        "name": "J&M Oil and Gas",
+        "phone": "+44 29 6666 6666"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+10.9972729,8.7616833        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "cafe",
+        "hours": "190",
+        "description": "OandO Depot",
+        "name": "JD Oil",
+        "phone": "+44 7777 777777"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7940359,7.5463287
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "cafe",
+        "hours": "130",
+        "description": "Loys Depot",
+        "name": "JFK Depot",
+        "phone": "+44 8888 88888"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7322, 8.5391
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "cafe",
+        "hours": "120",
+        "description": "Long Lohn",
+        "name": "Oil and Gas",
+        "phone": "+44 1010 101010"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.020605, 6.4252085
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "cafe",
+        "hours": "178",
+        "description": "UA Export.",
+        "name": "Amazing Oil",
+        "phone": "+44 1313 131313"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7743112,5.3221787
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "cafe",
+        "hours": "169",
+        "description": "Shell inc.",
+        "name": "Shell Oil",
+        "phone": "+44 1414 141414"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1590,
+          8.1339
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "cafe",
+        "hours": 125",
+        "description": "FQ Oil",
+        "name": "Ipswich Deport",
+        "phone": "+44 1717 17171"
+      }
+    }
+  ]
+}
+

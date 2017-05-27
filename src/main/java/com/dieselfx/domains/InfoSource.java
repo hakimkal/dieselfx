@@ -2,7 +2,7 @@ package com.dieselfx.domains;
 
 import lombok.Data;
 
-import javax.annotation.sql.DataSourceDefinitions;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 

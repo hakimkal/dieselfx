@@ -10,7 +10,7 @@
       "type": "Feature",
       "properties": {
         "category": "patisserie",
-        "hours": "155",
+        "hours":   "155",
         "description": "P&P Oil",
         "name": "ABIA DEPOT",
         "phone": "+44 20 1234 5678"

@@ -17,9 +17,7 @@ public class DailyPrice extends Model {
 
     private InfoSource infoSource;
     private  float price;
-
-            private float quality;
-
-            private Date date;
+    private float quality;
+    private Date date;
 
 }

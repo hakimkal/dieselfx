@@ -121,13 +121,13 @@ function initMap() {
   // Show the information for a store when its marker is clicked.
   map.data.addListener('click', event => {
 
-    var category = event.feature.getProperty('category');
-    var name = event.feature.getProperty('name');
-    var description = event.feature.getProperty('description');
-    var hours = event.feature.getProperty('hours');
-    var phone = event.feature.getProperty('phone');
-    var position = event.feature.getGeometry().get();
-    var content = `<img style="float:left; width:200px; margin-top:30px" src="../img/logo_${category}.png">
+  let category = event.feature.getProperty('category');
+  let name = event.feature.getProperty('name');
+   let description = event.feature.getProperty('description');
+    let hours = event.feature.getProperty('hours');
+    let phone = event.feature.getProperty('phone');
+   let position = event.feature.getGeometry().get();
+    let content = `<img style="float:left; width:200px; margin-top:30px" src="../img/logo_${category}.png">
       <div style="margin-left:220px; margin-bottom:20px;">
         <h2>${name}</h2><p>${description}</p>
         <p><b>Price:</b> ${hours}<br/><b>Phone:</b> ${phone}</p>

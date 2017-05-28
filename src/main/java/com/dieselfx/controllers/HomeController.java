@@ -30,4 +30,18 @@ public class HomeController   {
         return "maps" ;
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "location")
+
+    public String showLocation(Principal principal, Model model){
+
+        return "location" ;
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "daily")
+
+    public String showDaily(Principal principal, Model model){
+
+        return "daily" ;
+    }
+
 }

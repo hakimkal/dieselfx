@@ -2,8 +2,12 @@ package com.dieselfx.domains;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.CascadeType;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.List;
 
 /**
@@ -21,5 +25,6 @@ public class Feature {
     @Column(insertable = false, updatable = false)
     private String type;
     @OneToMany(fetch = FetchType.EAGER)
+    @Cascade({CascadeType.SAVE_UPDATE})
     private List<Property> properties;
 }

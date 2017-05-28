@@ -98,7 +98,8 @@ function initMap() {
   // Create the map.
   const map = new google.maps.Map(document.getElementsByClassName('map')[0], {
     zoom: 7,
-    center: {lat: 8.9667189, lng: -0.3674982},
+    center: {lat: 9.0502482, lng: 4.1787837},
+
     styles: mapStyle
   });
 
@@ -131,7 +132,7 @@ function initMap() {
       <div style="margin-left:220px; margin-bottom:20px;">
         <h2>${name}</h2><p>${description}</p>
         <p><b>Price:</b> ${hours}<br/><b>Phone:</b> ${phone}</p>
-        <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
+  
       </div>`;
 
     infoWindow.setContent(content);

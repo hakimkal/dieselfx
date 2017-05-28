@@ -63,6 +63,11 @@ public class ApiController {
         return infoResponse;
     }
 
+    @RequestMapping(value = "/features", method = RequestMethod.POST)
+    public @ResponseBody Feature saveFeature (@RequestBody Feature feature) {
+        return featureRepository.save(feature);
+    }
+
     @RequestMapping("/prices")
     public
     @ResponseBody

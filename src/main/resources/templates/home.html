@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>DieselFx | Home</title>
+        <title>DieselFx | Today's Prices</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -55,31 +55,6 @@
                     </div>
                 </div>
 		    </div>
-<!--			<div class="header-main bg-white">
-				<div class="container">
-					<div class="row">
-                        <div class="col-md-12">
-                            <div class="header-main-content">
-                                <div class="header-info">
-                                    <img src="img/icons/phone-2.png" alt="">
-                                    <div class="header-info-text">
-                                        <h4>+88 (012) 564 979 56</h4>
-                                        <span>We are open 9 am - 10pm</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logo-wrapper">
-                                <div class="logo">
-                                    <a href="index.html"><img src="img/logo/logo.png" alt="FINANCO" /></a>
-                                </div>
-                            </div>
-                            <div class="quote-btn">
-                                <button>Get a Quote</button>
-                            </div>
-                        </div>    
-					</div>
-				</div>
-			</div>-->
 			<!-- Main Menu Area Start -->
 			<div class="mainmenu-area fixed header-sticky hidden-xs">
 			    <div class="container">
@@ -91,8 +66,8 @@
                                         <li><a href="/">Home</a></li>
                                         <li><a href="#">Prices</a>
                                             <ul class="submenu">
-                                                <li><a href="#">Daily</a></li>
-                                                <li><a href="#">Location</a></li>
+                                                <li><a th:href="@{/daily}">Daily</a></li>
+                                                <li><a th:href="@{/location}">Location</a></li>
                                                 <li><a th:href="@{/map}">Maps</a></li>
                                             </ul>
                                         </li>
@@ -102,59 +77,6 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact Us</a></li>
-<!--                                        <li><a href="#">CASES</a>
-                                            <ul class="submenu megamenu">
-                                                <li><a href="#">Megamenu List</a>
-                                                    <ul>
-                                                        <li><a href="about.html">ABOUT US</a></li>
-                                                        <li><a href="about-2.html">About Us 2</a></li>
-                                                        <li><a href="services.html">Service</a></li>
-                                                        <li><a href="services-2.html">Service 2</a></li>
-                                                        <li><a href="single-service.html">Single Service</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Megamenu List</a>
-                                                    <ul>
-                                                        <li><a href="project.html">Project</a></li>
-                                                        <li><a href="project-2.html">Project 2</a></li>
-                                                        <li><a href="project-3.html">Project 3</a></li>
-                                                        <li><a href="project-4.html">Project 4</a></li>
-                                                        <li><a href="project-details.html">Project Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Megamenu List</a>
-                                                    <ul>
-                                                        <li><a href="blog.html">BLOG</a></li>
-                                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                                        <li><a href="contact.html">Contact</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="services.html">SERVICES</a>
-                                            <ul class="submenu">
-                                                <li><a href="services-2.html">Services 2</a></li>
-                                                <li><a href="single-service.html">Single Service</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="project.html">PROJECTS</a>
-                                            <ul class="submenu">
-                                                <li><a href="project-2.html">Projects 2</a></li>
-                                                <li><a href="project-3.html">Projects 3</a></li>
-                                                <li><a href="project-4.html">Projects 4</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="blog.html">BLOG</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">SHOP</a></li>-->
                                     </ul>
                                 </nav>
                             </div>
@@ -174,9 +96,9 @@
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="index.html">Prices</a>
                                             <ul class="submenu">
-                                                <li><a href="index.html">Daily</a></li>
-                                                <li><a href="index-2.html">Location</a></li>
-                                                <li><a href="index-3.html">Maps</a></li>
+                                                <li><a th:href="@{/daily}">Daily</a></li>
+                                                <li><a th:href="@{/location}">Location</a></li>
+                                                <li><a th:href="@{/map}">Maps</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="about.html">About Us</a>
@@ -335,11 +257,43 @@
                         </div>
                         
                     </div>
-                    <div class="col-md-5 hidden-sm hidden-xs">
-                        <div class="about-image-container">
-                            <img src="img/banner/4.jpg" alt="">
+                    <div class="col-lg-3 col-md-4 fix">
+                        <div class="single-sidebar-widget fix">
+                            <div class="sidebar-widget-title">
+                                <h5>Latest Diesel Updates</h5>
+                            </div>
+                            <div class="single-post-widget fix">
+                                <div class="post-img">
+                                    <a href="blog-details.html"><img src="img/blog/s-1.jpg" alt=""></a>
+                                </div>
+                                <div class="post-texts">
+                                    <h5><a href="blog-details.html">Financial Planning</a></h5>
+                                    <div class="post-info"><span class="author">Ronchi /</span><span class="post-date"> 06 Jun, 2016</span></div>
+                                    <p>Lorem must explain to ten how all this mistakenea </p>
+                                </div>
+                            </div>
+                            <div class="single-post-widget fix">
+                                <div class="post-img">
+                                    <a href="blog-details.html"><img src="img/blog/s-2.jpg" alt=""></a>
+                                </div>
+                                <div class="post-texts">
+                                    <h5><a href="blog-details.html">Market Growing</a></h5>
+                                    <div class="post-info"><span class="author">Silvia /</span><span class="post-date"> 10 Dec, 2016</span></div>
+                                    <p>Lorem must explain to ten how all this mistakenea </p>
+                                </div>
+                            </div>
+                            <div class="single-post-widget fix">
+                                <div class="post-img">
+                                    <a href="blog-details.html"><img src="img/blog/s-3.jpg" alt=""></a>
+                                </div>
+                                <div class="post-texts">
+                                    <h5><a href="blog-details.html">Business Strategy</a></h5>
+                                    <div class="post-info"><span class="author">Ronchi /</span><span class="post-date"> 06 Jun, 2016</span></div>
+                                    <p>Lorem must explain to ten how all this mistakenea </p>
+                                </div>
+                            </div>
                         </div>
-					</div>
+                    </div>
                 </div>
             </div>
         </div>

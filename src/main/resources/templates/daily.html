@@ -1,0 +1,403 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>DieselFx | Daily Prices</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Favicon Icon -->
+        <link rel="shortcut icon" type="image/x-icon" th:href="@{img/favicon.ico}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet"> 
+		
+		<!-- All css here -->
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+        <link rel="stylesheet" th:href="@{/css/shortcode/shortcodes.css}">
+        <link rel="stylesheet" th:href="@{/css/animate.css}">
+        <link rel="stylesheet" th:href="@{/css/owl.carousel.css}">
+        <link rel="stylesheet" th:href="@{/style.css}">
+        <link rel="stylesheet" th:href="@{/css/responsive.css}">
+        <script th:src="@{/js/vendor/modernizr-2.8.3.min.js}"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+		<!-- Header Area Start -->
+		<header class="header-three-area">
+		    <div class="header-top blue-bg fix hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-3">
+                            <span>Welcome to DieselFx</span>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="header-icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3">
+                            <div class="search-container">
+                                <form action="#" method="post">
+                                    <input placeholder="" type="text">
+                                    <button><i class="fa fa-search"></i></button>
+                                </form>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+
+
+			<!-- Main Menu Area Start -->
+			<div class="mainmenu-area fixed header-sticky hidden-xs">
+			    <div class="container">
+			        <div class="row">
+						<div class="col-md-12 col-xs-12">
+                            <div class="main-menu text-center">
+                                <nav>
+                                    <ul>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="#">Prices</a>
+                                            <ul class="submenu">
+                                                <li><a th:href="@{/daily}">Daily</a></li>
+                                                <li><a th:href="@{/location}">Location</a></li>
+                                                <li><a th:href="@{/map}">Maps</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About Us</a>
+                                            <ul class="submenu">
+                                                <li><a href="about-2.html">About Us 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+						</div>
+			        </div>
+			    </div>
+			</div>
+			<!-- Main Menu Area Start -->
+            <!-- Mobile Menu Area start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="index.html">Prices</a>
+                                            <ul class="submenu">
+                                                <li><a th:href="@{/daily}">Daily</a></li>
+                                                <li><a th:href="@{/location}">Location</a></li>
+                                                <li><a th:href="@{/map}">Maps</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About Us</a>
+                                            <ul class="submenu">
+                                                <li><a href="about-2.html">About Us 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>					
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Area end --> 
+		</header>
+		<!-- Header Area End -->
+
+
+        <!-- About Area Start -->
+        <div class="about-three-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="about-text">
+                            <h3>DieselFx</h3>
+                            <h2>Daily Prices</h2>
+                        </div>
+                        <div>
+                            <table class="table table-striped table-bordered table-condensed table-hover table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Location</th>
+                                        <th>Price</th>
+                                        <th>Quality</th>
+                                        <th>Contact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Ikeja</th>
+                                        <th>50.00</th>
+                                        <th>8.5</th>
+                                        <th>John - 08037451233</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Apapa</th>
+                                        <th>70.00</th>
+                                        <th>6.5</th>
+                                        <th>Kenneth - 08022251233</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Portharcourt</th>
+                                        <th>150.00</th>
+                                        <th>9.5</th>
+                                        <th>Abu - 08037451233</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Kaduna</th>
+                                        <th>56.20</th>
+                                        <th>3.5</th>
+                                        <th>Ayo - 08033351233</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Yaba</th>
+                                        <th>50.00</th>
+                                        <th>5.6</th>
+                                        <th>John - 08037451233</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Apapa</th>
+                                        <th>52.00</th>
+                                        <th>8.5</th>
+                                        <th>John - 08037451233</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Eleme</th>
+                                        <th>75.12</th>
+                                        <th>6.5</th>
+                                        <th>John - 08037451233</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Kuje</th>
+                                        <th>60.10</th>
+                                        <th>5.5</th>
+                                        <th>John - 08037451233</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-4 fix">
+                        <div class="single-sidebar-widget fix">
+                            <div class="sidebar-widget-title">
+                                <h5>Latest Diesel Updates</h5>
+                            </div>
+                            <div class="single-post-widget fix">
+                                <div class="post-img">
+                                    <a href="blog-details.html"><img src="img/blog/s-1.jpg" alt=""></a>
+                                </div>
+                                <div class="post-texts">
+                                    <h5><a href="blog-details.html">Financial Planning</a></h5>
+                                    <div class="post-info"><span class="author">Ronchi /</span><span class="post-date"> 06 Jun, 2016</span></div>
+                                    <p>Lorem must explain to ten how all this mistakenea </p>
+                                </div>
+                            </div>
+                            <div class="single-post-widget fix">
+                                <div class="post-img">
+                                    <a href="blog-details.html"><img src="img/blog/s-2.jpg" alt=""></a>
+                                </div>
+                                <div class="post-texts">
+                                    <h5><a href="blog-details.html">Market Growing</a></h5>
+                                    <div class="post-info"><span class="author">Silvia /</span><span class="post-date"> 10 Dec, 2016</span></div>
+                                    <p>Lorem must explain to ten how all this mistakenea </p>
+                                </div>
+                            </div>
+                            <div class="single-post-widget fix">
+                                <div class="post-img">
+                                    <a href="blog-details.html"><img src="img/blog/s-3.jpg" alt=""></a>
+                                </div>
+                                <div class="post-texts">
+                                    <h5><a href="blog-details.html">Business Strategy</a></h5>
+                                    <div class="post-info"><span class="author">Ronchi /</span><span class="post-date"> 06 Jun, 2016</span></div>
+                                    <p>Lorem must explain to ten how all this mistakenea </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Area End -->
+
+
+        <!-- Information Area Start -->
+        <div class="information-three-area bg-light fix">
+            <div class="information-chart">
+                <div id="chartContainer2" style="height: 345px; width: 100%;"></div>
+            </div>
+
+        </div>
+        <!-- Information Area End -->
+
+
+
+        <div class="client-area ptb-40 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="client-carousel">
+                        <div class="col-xs-12">
+                            <div class="single-client block">
+                                <a href="#" class="block">
+                                    <span class="p-images"><img src="img/client/1.png" alt=""></span>
+                                    <span class="s-images"><img src="img/client/1-hover.png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="single-client block">
+                                <a href="#" class="block">
+                                    <span class="p-images"><img src="img/client/2.png" alt=""></span>
+                                    <span class="s-images"><img src="img/client/2-hover.png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="single-client block">
+                                <a href="#" class="block">
+                                    <span class="p-images"><img src="img/client/3.png" alt=""></span>
+                                    <span class="s-images"><img src="img/client/3-hover.png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="single-client block">
+                                <a href="#" class="block">
+                                    <span class="p-images"><img src="img/client/4.png" alt=""></span>
+                                    <span class="s-images"><img src="img/client/4-hover.png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="single-client block">
+                                <a href="#" class="block">
+                                    <span class="p-images"><img src="img/client/5.png" alt=""></span>
+                                    <span class="s-images"><img src="img/client/5-hover.png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+        <!--End of Client area-->                
+       <!--Start of Footer Widget-area-->
+        <div class="footer-widget-area bg-4 overlay-blue pt-110 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img th:src="@{/img/logo/footer-logo.png}" alt="FINANCO"></a>
+                            </div>
+                            <p>Lorem must explain to you how all this mistaolt cing pleasure and praising ain wasnad I will give you a complete pain was prexplain to you lorem</p>
+                            <form action="#" id="mc-form" class="mc-form fix">
+                                <div class="subscribe-form">
+                                    <input id="mc-email" type="email" name="email" placeholder="Email for Newsletter">
+                                    <button id="mc-submit" type="submit"><i class="fa fa-send"></i></button>
+                                </div>    
+                            </form>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts text-centre fix text-small">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                            </div>
+                            <!-- mailchimp-alerts end -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-footer-widget">
+                            <h3>POPULAR POST</h3>
+                            <div class="footer-widget-content">
+                                <h5>Duplex Villa Design</h5>
+                                <span>Lorem ipsum dolor sit amet, tur<br>acinglit sed do eius </span>
+                            </div>
+                            <div class="footer-widget-content">
+                                <h5>Real Estate Fest</h5>
+                                <span>Lorem ipsum dolor sit amet, tur<br>acinglit sed do eius </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 hidden-md hidden-sm col-xs-12">
+                        <div class="single-footer-widget">
+                            <h3>QUICK LINK</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">CASES</a></li>
+                                <li><a href="#">From Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-footer-widget">
+                            <h3>CONTACT US</h3>
+                            <div class="footer-contact-info">
+                                <img th:src="@{/img/icons/f-map.png}" alt="">
+                                <span class="block">256, 1st AVE, Manchester<br>
+                                125 , Noth England</span>
+                            </div>
+                            <div class="footer-contact-info">
+                                <img th:src="@{/img/icons/f-phone.png}" alt="">
+                                <span class="block">Telephone : +88 (012) 356 958 45<br>
+                                Telephone : +88 (012) 254 658 98</span>
+                            </div>
+                            <div class="footer-contact-info">
+                                <img th:src="@{img/icons/f-globe.png}" alt="">
+                                <span class="block">Email : info@devitems.com<br>
+                                Web : www.devitems.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Footer Widget-area-->
+        <!-- Start of Footer area -->
+        <footer class="footer-area bg-blue text-center ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-text">
+                            <span class="block">Copyright&copy; 2017 <a href="#">Devitems</a>. All rights reserved.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer area -->
+        
+		<!-- All js here -->
+        <script th:src="@{js/vendor/jquery-1.12.4.min.js}"></script>
+        <script th:src="@{/js/bootstrap.min.js}"></script>
+        <script th:src="@{/js/owl.carousel.min.js}"></script>
+        <script th:src="@{/js/ajax-mail.js}"></script>
+        <script th:src="@{/js/jquery.ajaxchimp.min.js}"></script>
+        <script th:src="@{/js/jquery.magnific-popup.js}"></script>
+        <script th:src="@{/js/counterup.js}"></script>
+        <script th:src="@{/js/plugins.js}"></script>
+        <script th:src="@{/js/canvasjs.min.js}"></script>
+        <script th:src="@{/js/canvas-active-2.js}"></script>
+        <script th:src="@{/js/main.js}"></script>
+    </body>
+</html>
